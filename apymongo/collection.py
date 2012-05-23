@@ -17,8 +17,8 @@
 import warnings
 import functools
 
-from bson.code import Code
-from bson.son import SON
+from apybson.code import Code
+from apybson.son import SON
 from apymongo import (helpers,
                      message)
 from apymongo.cursor import Cursor

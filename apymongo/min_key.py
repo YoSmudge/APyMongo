@@ -12,4 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from bson.min_key import *
+from apybson.min_key import *

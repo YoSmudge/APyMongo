@@ -22,8 +22,8 @@ except:  # for Python < 2.5
     _md5func = md5.new
 import struct
 
-import bson
-from bson.son import SON
+import apybson as bson
+from apybson.son import SON
 import pymongo
 import apymongo
 from apymongo.errors import (AutoReconnect,

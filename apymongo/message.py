@@ -25,8 +25,8 @@ MongoDB.
 import random
 import struct
 
-import bson
-from bson.son import SON
+import apybson as bson
+from apybson.son import SON
 try:
     from apymongo import _cbson
     _use_c = True

@@ -18,7 +18,7 @@
 import calendar
 import datetime
 
-from bson.tz_util import utc
+from apybson.tz_util import utc
 
 
 class Timestamp(object):

@@ -14,7 +14,7 @@
 
 """Exceptions raised by PyMongo."""
 
-from bson.errors import *
+from apybson.errors import *
 
 
 class PyMongoError(Exception):

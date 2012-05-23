@@ -20,7 +20,7 @@ Only really intended to be used by internal build scripts.
 import sys
 sys.path[0:0] = [""]
 
-import bson
+import apybson as bson
 import pymongo
 
 if not pymongo.has_c() or not bson.has_c():

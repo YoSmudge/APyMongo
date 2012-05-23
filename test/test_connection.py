@@ -26,8 +26,8 @@ from nose.plugins.skip import SkipTest
 
 from tornado.testing import AsyncTestCase
 
-from bson.son import SON
-from bson.tz_util import utc
+from apybson.son import SON
+from apybson.tz_util import utc
 from apymongo.connection import (Connection,
                                 _parse_uri)
 from apymongo.database import Database

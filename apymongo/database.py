@@ -17,9 +17,9 @@
 import warnings
 import functools
 
-from bson.code import Code
-from bson.dbref import DBRef
-from bson.son import SON
+from apybson.code import Code
+from apybson.dbref import DBRef
+from apybson.son import SON
 from apymongo import helpers
 from apymongo.collection import Collection
 from apymongo.errors import (CollectionInvalid,

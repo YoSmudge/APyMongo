@@ -21,18 +21,18 @@ import re
 import struct
 import warnings
 
-from bson.binary import Binary
-from bson.code import Code
-from bson.dbref import DBRef
-from bson.errors import (InvalidBSON,
+from apybson.binary import Binary
+from apybson.code import Code
+from apybson.dbref import DBRef
+from apybson.errors import (InvalidBSON,
                          InvalidDocument,
                          InvalidStringData)
-from bson.max_key import MaxKey
-from bson.min_key import MinKey
-from bson.objectid import ObjectId
-from bson.son import SON
-from bson.timestamp import Timestamp
-from bson.tz_util import utc
+from apybson.max_key import MaxKey
+from apybson.min_key import MinKey
+from apybson.objectid import ObjectId
+from apybson.son import SON
+from apybson.timestamp import Timestamp
+from apybson.tz_util import utc
 
 
 try:
@@ -508,7 +508,7 @@ def has_c():
     .. versionadded:: 1.9
     """
     try:
-        from bson import _cbson
+        from apybson import _cbson
         return True
     except ImportError:
         return False

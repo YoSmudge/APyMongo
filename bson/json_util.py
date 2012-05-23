@@ -59,12 +59,12 @@ try:
 except ImportError:
     _use_uuid = False
 
-from bson.dbref import DBRef
-from bson.max_key import MaxKey
-from bson.min_key import MinKey
-from bson.objectid import ObjectId
-from bson.timestamp import Timestamp
-from bson.tz_util import utc
+from apybson.dbref import DBRef
+from apybson.max_key import MaxKey
+from apybson.min_key import MinKey
+from apybson.objectid import ObjectId
+from apybson.timestamp import Timestamp
+from apybson.tz_util import utc
 
 # TODO support Binary and Code
 # Binary and Code are tricky because they subclass str so json thinks it can

@@ -12,4 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from bson.tz_util import *
+from apybson.tz_util import *

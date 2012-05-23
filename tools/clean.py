@@ -39,7 +39,7 @@ except ImportError:
     pass
 
 try:
-    from bson import _cbson
+    from apybson import _cbson
     sys.exit("could still import _cbson")
 except ImportError:
     pass

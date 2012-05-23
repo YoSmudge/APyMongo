@@ -30,8 +30,8 @@ import struct
 import threading
 import time
 
-from bson.errors import InvalidId
-from bson.tz_util import utc
+from apybson.errors import InvalidId
+from apybson.tz_util import utc
 
 
 def _machine_bytes():

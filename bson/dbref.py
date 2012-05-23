@@ -14,7 +14,7 @@
 
 """Tools for manipulating DBRefs (references to MongoDB documents)."""
 
-from bson.son import SON
+from apybson.son import SON
 from copy import deepcopy
 
 

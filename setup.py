@@ -130,17 +130,17 @@ c_ext = Feature(
     standard=True,
     ext_modules=[Extension('bson._cbson',
                            include_dirs=['bson'],
-                           sources=['bson/_cbsonmodule.c',
-                                    'bson/time64.c',
-                                    'bson/buffer.c',
-                                    'bson/encoding_helpers.c']),
+                           sources=['apybson/_cbsonmodule.c',
+                                    'apybson/time64.c',
+                                    'apybson/buffer.c',
+                                    'apybson/encoding_helpers.c']),
                  Extension('apymongo._cmessage',
-                           include_dirs=['bson'],
+                           include_dirs=['apybson'],
                            sources=['apymongo/_cmessagemodule.c',
-                                    'bson/_cbsonmodule.c',
-                                    'bson/time64.c',
-                                    'bson/buffer.c',
-                                    'bson/encoding_helpers.c'])])
+                                    'apybson/_cbsonmodule.c',
+                                    'apybson/time64.c',
+                                    'apybson/buffer.c',
+                                    'apybson/encoding_helpers.c'])])
 
 if "--no_ext" in sys.argv:
     sys.argv = [x for x in sys.argv if x != "--no_ext"]
@@ -166,7 +166,7 @@ setup(
     author_email="dyamins@gmail.com",
     url="http://github.com/govdata/apymongo",
     keywords=["mongo", "mongodb", "pymongo", "bson","asynchronous","async","tornado","iostream"],
-    packages=["apymongo","bson"],
+    packages=["apymongo","apybson"],
     install_requires=["tornado"],
     features=features,
     license="Apache License, Version 2.0",
